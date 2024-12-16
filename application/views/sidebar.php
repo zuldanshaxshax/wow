@@ -100,9 +100,7 @@
 						</a>
 						<ul id="Teachers" class="sidebar-dropdown list-unstyled collapse "
 							data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class='sidebar-link' href='forms-advanced-inputs.html'>New Teacher</a></li>
-							<li class="sidebar-item"><a class='sidebar-link' href='forms-editors.html'>Teachers List</a></li>
-							<li class="sidebar-item"><a class='sidebar-link' href='forms-validation.html'>Teacher Periods</a></li>
+							<li class="sidebar-item"><a class='sidebar-link' href='Teacher_Details.php'>Teachers List</a></li>
 						</ul>
 						<a data-bs-target="#adminstaff" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="check-square"></i> <span class="align-middle">Admin Staff</span>
@@ -123,9 +121,9 @@
 								class="align-middle">Subjects</span>
 						</a>
 						<ul id="Subjects" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class='sidebar-link' href='charts-chartjs.html'>New Subject</a>
+							<li class="sidebar-item"><a class='sidebar-link' href='charts-chartjs.html'></a>
 							</li>
-							<li class="sidebar-item"><a class='sidebar-link' href='charts-apexcharts.html'>Subject Report</a>
+							<li class="sidebar-item"><a class='sidebar-link' href='course_details.php'>Subject Report</a>
                             </li>
 						</ul>
 					</li>
@@ -218,9 +216,9 @@
 								class="align-middle">User Management</span>
 						</a>
 						<ul id="settings" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class='sidebar-link' href='charts-chartjs.html'>New User</a>
+							<li class="sidebar-item"><a class='sidebar-link' href='user.php'>New User</a>
 							</li>
-							<li class="sidebar-item"><a class='sidebar-link' href='charts-chartjs.html'>User Details</a>
+							<li class="sidebar-item"><a class='sidebar-link' href='AdminDetails.php'>User Details</a>
 							</li>
 							<li class="sidebar-item"><a class='sidebar-link' href='charts-chartjs.html'>Logout</a>
 							</li>

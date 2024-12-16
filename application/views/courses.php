@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <style>
+        .row{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap:40px;
+            padding-top: 30px;
+        }
+        img{
+            width: 2px;
+        }
+    </style>
     <nav>
         <div class="logo">
             <i class="fa-brands fa-codepen"></i>
@@ -25,41 +40,36 @@
         </div>    
     </nav>
 
+  
     <div class="courses" id="courses">
         <h2>Courses</h2>
         <div class="row">
-            <div class="col-courses">
-                <div class="image">
-                    <img src="images/javascript.png" alt="">
-                </div>
-                <span>JavaScript basic</span> <br>
-                <form action="" method="post">
-                <button id="course"><a href="SignUp.php" id="course">Inrolment</a></button>
-                </form>
-            </div>
+        <?php
+            include '../config/conn.php';
+            $sql = "SELECT * FROM course";
+            $result = $conn->query($sql);
+             while ($row = $result->fetch_assoc()) {
 
+            ?>
+            
             <div class="col-courses">
+                
                 <div class="image">
-                    <img src="images/react.png" alt="">
+                    <?php 
+                    echo '<img src="" alt="">';
+                    ?>
                 </div>
-                <span>React-js basic</span> <br>
+                <span><?php echo   $row['CourseName'] ?></span> <br>
                 <form action="" method="post">
-                <button id="course"><a href="SignUp.php" id="course">Inrolment</a></button>
+                <button id="course"><a href="NewStudent.php" id="course"><?php echo $row['Price'];?></a></button>
                 </form>
+                 
             </div>
-
-            <div class="col-courses">
-                <div class="image">
-                    <img src="images/php.jpeg" alt="">
-                </div>
-                <span>php basic</span> <br>
-                <form action="" method="post">
-                <button id="course"><a href="SignUp.php" id="course">Inrolment</a></button>
-                </form>
-            </div>
-        </div>
+        <?php } ?>
     </div>
     
-    <script src="../../js/main.js"></script>
+
+    
+  
 </body>
 </html>

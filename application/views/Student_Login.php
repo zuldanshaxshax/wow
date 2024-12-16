@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +15,7 @@
             <h1>E-learn</h1>
         </div>
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="">Courses</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
@@ -23,16 +24,17 @@
             <button id="signin"><a href="#">singin</a></button>
         </div>
     </nav>
+
     <div class="form-container">
-        <form action="../api/Singup.php" method="post">
-            <h3>Register Now</h3>
-            <input type="text" name="name"  required placeholder="enter your name">
+        <form action="../api/Studentlogin.php" method="post">
+            <h3>Login Now</h3>
             <input type="email" name="email" required placeholder="enter your email">
             <input type="password" name="password" required placeholder="enter your password">
-            <input type="submit" name="submit" value="Register Now" class="form-btn">
-            <p>already have an account? <a href="login.php">Login Now</a></p>
+            <a href="#showCourse"><input type="submit" name="submit" value="Login Now" class="form-btn"></a>
+            <p>Don't have an account? <a href="NewStudent.php">Register Now</a></p>
         </form>
     </div>
+
     <script src="../../js/main.js"></script>
 </body>
 </html>

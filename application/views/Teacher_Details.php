@@ -1,4 +1,4 @@
-  <?php include "header.php"; ?>
+<?php include "header.php"; ?>
   <?php include "sidebar.php"; ?>
   <?php include "head.php"; ?>
   <?php include "../config/conn.php"; ?>
@@ -26,7 +26,7 @@
                       </thead>
                       <tbody >
                         <?php
-                            $query = "SELECT * FROM students";
+                            $query = "SELECT * FROM teacher";
                             $result = $conn->query($query);
                             $tableStudent = "";
                            
@@ -37,7 +37,7 @@
                                 
                                 while($row = $result->fetch_assoc()){
 
-                                    $tableStudent .= "<td>" . $row['studentID'] . "</td>";
+                                    $tableStudent .= "<td>" . $row['TeacherID'] . "</td>";
                                     $tableStudent .= "<td>" . $row['Name'] . "</td>";
                                     $tableStudent .= "<td>" . $row['phone'] . "</td>";
                                     $tableStudent .= "<td>" . $row['email'] . "</td>";
@@ -60,9 +60,10 @@
 
   </main>
 
-
-    
-  </script>
+  
+  
+  
+  
 
   <?php include "footer.php"; ?>
 

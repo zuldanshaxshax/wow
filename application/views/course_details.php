@@ -1,4 +1,4 @@
-  <?php include "header.php"; ?>
+<?php include "header.php"; ?>
   <?php include "sidebar.php"; ?>
   <?php include "head.php"; ?>
   <?php include "../config/conn.php"; ?>
@@ -17,16 +17,14 @@
                     <table id="studentDetailsTable" class="table table-striped" style="width:100%">
                     <thead>
                           <tr>
-                              <th>Id</th>
-                              <th>Full Name</th>
-                              <th>Phone</th>
-                              <th>Email</th>
-                              <th>password</th>
+                              <th>Coures ID</th>
+                              <th>Course Name</th>
+                              <th>Price</th>
                           </tr>
                       </thead>
                       <tbody >
                         <?php
-                            $query = "SELECT * FROM students";
+                            $query = "SELECT * FROM course";
                             $result = $conn->query($query);
                             $tableStudent = "";
                            
@@ -37,11 +35,9 @@
                                 
                                 while($row = $result->fetch_assoc()){
 
-                                    $tableStudent .= "<td>" . $row['studentID'] . "</td>";
-                                    $tableStudent .= "<td>" . $row['Name'] . "</td>";
-                                    $tableStudent .= "<td>" . $row['phone'] . "</td>";
-                                    $tableStudent .= "<td>" . $row['email'] . "</td>";
-                                    $tableStudent .= "<td>" . $row['password'] . "</td>";
+                                    $tableStudent .= "<td>" . $row['CourseID'] . "</td>";
+                                    $tableStudent .= "<td>" . $row['CourseName'] . "</td>";
+                                    $tableStudent .= "<td>" . $row['Price'] . "</td>";
                                     $tableStudent .= "</tr>";
                                 }
                                 echo $tableStudent;
@@ -60,9 +56,10 @@
 
   </main>
 
-
-    
-  </script>
+  
+  
+  
+  
 
   <?php include "footer.php"; ?>
 

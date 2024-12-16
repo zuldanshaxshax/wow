@@ -21,7 +21,7 @@
             <li><a href="">Contact</a></li>
         </ul>
         <div class="btns">
-            <button id="signin"><a href="login.php">singin</a></button>
+            <button id="signin"><a href="chooseapp.php">singin</a></button>
         </div>    
     </nav>
 

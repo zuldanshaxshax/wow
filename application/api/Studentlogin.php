@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 include '../config/conn.php';
 
 if(isset($_POST['submit'])){
@@ -24,9 +25,6 @@ if(isset($_POST['submit'])){
     
 }
 
-include "header.php";
-include "sidebar.php";
-include "head.php";
-include "content.php";
-include "footer.php";
+
+
 ?>

@@ -41,8 +41,8 @@
     <div class="container">
         <div class="con">
             <a href="courses.php">Student</a>
-            <a href="courses.php">Teacher</a>
-            <a href="#">Admin</a>
+            <a href="TeacherSingup.php">Teacher</a>
+            <a href="userlogin.php">Admin</a>
         </div>
     </div>
     <script src="../../js/main.js"></script>
