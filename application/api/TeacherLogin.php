@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     $count = mysqli_num_rows($result);
     if($count == 1){
-        header('location:../views/Teacher_page.php');
+        header('location:../views/kaiadmin-lite-1.2.0/index.html');
     }else{
         echo '<script>
         window.location.href = "../views/index.php";
